@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="only light">
+<meta name="supported-color-schemes" content="light">
+<meta name="darkreader-lock">
+<style>:root{color-scheme:only light!important}@media (prefers-color-scheme:dark){:root{color-scheme:only light!important}}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>İlayda &amp; Yahya Yasin · Nişan Davetiyesi</title>
+<meta name="description" content="27 Ekim 2026 Salı, saat 19.00 · Akman Rönesans, Ankara">
+<meta property="og:type" content="website">
+<meta property="og:title" content="İlayda &amp; Yahya Yasin · Nişan Davetiyesi">
+<meta property="og:description" content="27 Ekim 2026 Salı, saat 19.00 · Akman Rönesans, Ankara">
+<meta property="og:image" content="https://nisan-davetiye-nine.vercel.app/og.jpg">
+<meta property="og:url" content="https://nisan-davetiye-nine.vercel.app/bahce/">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: telefon genişliğinde tek sahne. Açılış = salonun suluboya illüstrasyonu + isimler; dokununca davetiye kartı açılır. Tek tema (kağıt), bilinçli. */
+:root{
+  --page:#ece9e1; --paper:#fbfaf6; --ink:#33402f; --mute:#7a8274;
+  --sage:#6f8566; --rose:#b2606f; --blush:#e8b4b8; --gold:#ae8d50;
+  --f-script:"Great Vibes","Brush Script MT",cursive;
+  --f-serif:"Cormorant Garamond","Garamond","Times New Roman",serif;
+  --f-sans:"Jost","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{background:var(--page);color:var(--ink)}
+body{font-family:var(--f-sans);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 32px}
+.stage{max-width:440px;margin:0 auto;background:var(--paper);border-radius:20px;overflow:hidden;position:relative;box-shadow:0 18px 44px rgba(51,64,47,.16)}
+@media (max-width:480px){body{padding-left:0;padding-right:0;padding-block:0}.stage{border-radius:0;box-shadow:none}}
+
+/* ---- Açılış ---- */
+.cover{position:relative;transition:opacity .7s,transform .9s cubic-bezier(.5,0,.3,1)}
+.cover.out{opacity:0;transform:translateY(-30px)}
+.art{display:block;width:100%;height:auto}
+.cover-text{text-align:center;padding:4px 20px 34px;position:relative}
+.kick{font:500 11px/1.4 var(--f-sans);letter-spacing:.32em;text-transform:uppercase;color:var(--sage);margin:0}
+.names{font:400 46px/1.1 var(--f-script);color:var(--ink);margin:6px 0 4px}
+.names i{font:italic 400 24px/1 var(--f-serif);color:var(--gold);padding:0 6px}
+.when{font:italic 500 18px/1.4 var(--f-serif);margin:0;color:var(--mute)}
+.open{margin-top:20px;font:500 12.5px/1 var(--f-sans);letter-spacing:.2em;text-transform:uppercase;color:var(--paper);background:var(--sage);border:0;border-radius:999px;padding:15px 26px;cursor:pointer;animation:breathe 2.6s ease-in-out 3.6s infinite}
+.open:focus-visible,.back:focus-visible,.btn-loc:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@keyframes breathe{0%,100%{box-shadow:0 0 0 0 rgba(111,133,102,.45)}50%{box-shadow:0 0 0 12px rgba(111,133,102,0)}}
+
+/* illüstrasyon katmanları */
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes draw{from{stroke-dashoffset:700}to{stroke-dashoffset:0}}
+@keyframes sway{0%,100%{transform:skewX(0)}50%{transform:skewX(1.6deg)}}
+@keyframes glow{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes twinkle{0%,100%{opacity:0}50%{opacity:1}}
+.L{transform-box:fill-box;transform-origin:50% 100%}
+.sky{animation:fade 1.4s both}
+.bld{animation:up 1.2s .3s both}
+.trees{animation:up 1.2s .5s both}
+.lawn{animation:fade 1.2s .2s both}
+.beds{animation:fade 1s .9s both}
+.chairs{animation:up 1s 1.1s both}
+.perg path{stroke-dasharray:700;animation:draw 2.2s .9s ease-out both}
+.drape{animation:fade 1.2s 2s both}
+.drape-in{transform-box:fill-box;transform-origin:50% 0;animation:sway 6s ease-in-out 3s infinite}
+.lamps{animation:fade 1s 1.6s both}
+.halo{animation:glow 3.4s ease-in-out infinite}
+.couple{animation:up 1.4s 2.2s both}
+.bush{animation:up 1.2s 1.4s both}
+.spark{animation:twinkle 2.4s ease-in-out infinite}
+.cover-text>*{animation:up 1s both}
+.cover-text>:nth-child(1){animation-delay:2.7s}.cover-text>:nth-child(2){animation-delay:2.9s}.cover-text>:nth-child(3){animation-delay:3.1s}.cover-text>:nth-child(4){animation-delay:3.3s}
+.petal{position:absolute;top:-20px;width:10px;height:12px;border-radius:10px 0 10px 0;background:#eab9bd;opacity:.8;pointer-events:none;z-index:3;animation:fall linear infinite}
+@keyframes fall{to{transform:translate(var(--dx,40px),760px) rotate(var(--r,360deg))}}
+
+/* ---- Kart ---- */
+.card{text-align:center;padding:38px 26px 34px;position:relative}
+.card::before{content:"";position:absolute;inset:12px;border:1px solid var(--gold);pointer-events:none}
+.card::after{content:"";position:absolute;inset:16px;border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);pointer-events:none}
+.card .rv{animation:up 1s cubic-bezier(.2,.7,.2,1) var(--d,0s) both}
+.orn{width:84px;height:auto;color:var(--gold);display:block;margin:6px auto 0}
+.c-kick{font:500 11px/1.4 var(--f-sans);letter-spacing:.32em;text-transform:uppercase;color:var(--rose);margin:16px 0 0}
+.fam{font:italic 400 19px/1.45 var(--f-serif);margin:16px auto 0;max-width:28ch}
+.c-names{font:400 56px/1.02 var(--f-script);margin:14px 0 0;color:var(--ink)}
+.c-names em{display:block;font:italic 400 22px/1 var(--f-serif);color:var(--gold);margin:4px 0}
+.date{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin:28px 0 0}
+.date .side{font:500 12px/1.4 var(--f-sans);letter-spacing:.2em;text-transform:uppercase;border-block:1px solid var(--gold);padding:8px 0}
+.date .day{font:500 56px/1 var(--f-serif)}
+.date .day small{display:block;font:500 11.5px/1 var(--f-sans);letter-spacing:.24em;text-transform:uppercase;margin-top:5px;color:var(--gold)}
+.place{font:600 21px/1.3 var(--f-serif);margin:26px 0 0;letter-spacing:.03em}
+.addr{font:400 13.5px/1.55 var(--f-sans);color:var(--mute);margin:6px 0 0}
+.btn-loc{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:500 12.5px/1 var(--f-sans);letter-spacing:.14em;text-transform:uppercase;padding:14px 22px;border-radius:999px;background:var(--sage);color:var(--paper);margin-top:18px}
+.btn-loc svg{width:16px;height:16px}
+.cd{display:flex;justify-content:center;gap:14px;font-variant-numeric:tabular-nums;margin-top:26px}
+.cd div{display:flex;flex-direction:column;align-items:center;min-width:44px}
+.cd b{font:500 26px/1 var(--f-serif)}
+.cd span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-top:5px;color:var(--mute)}
+.back{margin-top:24px;font:500 11px/1 var(--f-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mute);background:none;border:0;cursor:pointer;padding:8px}
+
+.rays{transform-origin:200px 292px;animation:spin 40s linear infinite,raypulse 3s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes raypulse{0%,100%{opacity:.08}50%{opacity:.28}}
+.chalo,.chalo2{transform-box:fill-box;transform-origin:center;animation:cpulse 3s ease-in-out infinite}
+.chalo2{animation-duration:3.2s}
+@keyframes cpulse{0%,100%{transform:scale(.96);opacity:.7}50%{transform:scale(1.04);opacity:.9}}
+.cbody{animation:flick 2.6s ease-in-out infinite}
+@keyframes flick{0%,100%{opacity:.93}50%{opacity:1}}
+.artwrap{position:relative;overflow:hidden}
+.art-img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to bottom,#000 90%,transparent);mask-image:linear-gradient(to bottom,#000 90%,transparent);animation:artIn 2.4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes artIn{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:none}}
+.fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;animation:fadeFx 1.5s 1.6s both}
+@keyframes fadeFx{from{opacity:0}to{opacity:1}}
+.feat{margin-top:22px}
+.rsvp{padding:18px 14px 16px;border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);border-radius:14px;text-align:left;background:color-mix(in srgb,var(--sage) 6%,var(--paper))}
+.rh{font:500 11px/1 var(--f-sans);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin:0 0 14px;text-align:center}
+.fl{display:block;font:400 12px/1 var(--f-sans);color:var(--mute);margin:0 0 6px}
+#rname{width:100%;font:400 16px/1.2 var(--f-sans);color:var(--ink);background:var(--paper);border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);border-radius:10px;padding:12px}
+#rname:focus{outline:2px solid var(--sage);outline-offset:1px}
+.cnt{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:14px 0 0;font:400 14px/1.3 var(--f-sans)}
+.step{display:flex;align-items:center;border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);border-radius:999px;overflow:hidden;background:var(--paper)}
+.step button{width:40px;height:38px;background:transparent;border:0;color:var(--sage);font:400 22px/1 var(--f-sans);cursor:pointer}
+.step output{min-width:30px;text-align:center;font:500 17px/1 var(--f-sans);font-variant-numeric:tabular-nums}
+.err{color:var(--rose);font:400 13px/1.3 var(--f-sans);margin:10px 0 0}
+.rb{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 0}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 0}
+.act{display:flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;font:500 11.5px/1.2 var(--f-sans);letter-spacing:.08em;text-transform:uppercase;padding:13px 8px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 50%,transparent);color:var(--ink);background:var(--paper);cursor:pointer}
+.act svg{width:16px;height:16px;flex:none}
+.act.main{background:var(--sage);border-color:var(--sage);color:var(--paper)}
+.act.wide{grid-column:1/-1}
+.act:focus-visible,.step button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.toast{min-height:18px;margin:10px 0 0;font:400 13px/1.3 var(--f-sans);color:var(--sage)}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .petal{display:none}
+}
+</style>
+
+<main class="stage" lang="tr">
+  <section class="cover" id="cover">
+    <div class="artwrap"><img class="art-img" alt="Akman Rönesans bahçesindeki avizeli kemerler önünde nişanlı çift" width="720" height="907" src="/art.webp"><canvas class="fx" aria-hidden="true"></canvas></div>
+    <div class="cover-text">
+      <p class="kick">Nişanımıza davetlisiniz</p>
+      <h1 class="names">İlayda<i>&amp;</i>Yahya Yasin</h1>
+      <p class="when">27 Ekim 2026 · Saat 19.00</p>
+      <button class="open" type="button" id="openBtn">Davetiyeyi Aç</button>
+    </div>
+  </section>
+
+  <section class="card" id="card" hidden>
+    <svg class="orn rv" style="--d:0s" viewBox="0 0 84 56" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+      <path d="M22 56V30A20 20 0 0 1 62 30V56M26 56V30A16 16 0 0 1 58 30V56M26 30H58M36 30A6 6 0 0 1 48 30M42 30V14M42 30 30.7 18.7M42 30 53.3 18.7M42 30 27 24M42 30 57 24"/>
+      <path d="M6 56V38A8 8 0 0 1 22 38M62 38A8 8 0 0 1 78 38V56" stroke-width=".9"/>
+    </svg>
+    <p class="c-kick rv" style="--d:.1s">Nişanımıza Davetlisiniz</p>
+    <p class="fam rv" style="--d:.2s">Saran ve Bingöl ailelerinin kıymetli evlatları</p>
+    <h2 class="c-names rv" style="--d:.35s">İlayda<em>&amp;</em>Yahya Yasin</h2>
+    <div class="date rv" style="--d:.55s">
+      <div class="side">Salı</div>
+      <div class="day">27<small>Ekim 2026</small></div>
+      <div class="side">19.00</div>
+    </div>
+    <p class="place rv" style="--d:.7s">Akman Rönesans</p>
+    <p class="addr rv" style="--d:.75s">Konutkent Mahallesi 2961. Cadde No:1/B<br>Çankaya / Ankara</p>
+    <div class="rv feat" style="--d:.85s">
+      <div class="rsvp">
+        <p class="rh">Katılım Bildirimi</p>
+        <label class="fl" for="rname">Adınız Soyadınız</label>
+        <input id="rname" type="text" autocomplete="name" placeholder="Örn. Ayşe Yılmaz" maxlength="60">
+        <div class="cnt"><span>Kaç kişi geleceksiniz?</span>
+          <div class="step"><button type="button" id="minus" aria-label="Azalt">−</button><output id="num" aria-live="polite">1</output><button type="button" id="plus" aria-label="Artır">+</button></div></div>
+        <p class="err" id="err" hidden>Lütfen adınızı yazın</p>
+        <div class="rb"><a class="act main" id="yes" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 18.8z"/><path d="M9 9.5c.3 1.8 2.2 3.9 4.5 4.5l1.2-1.2 1.8.8-.3 1.6c-3.6.5-7.6-3.4-7.4-7l1.6-.3.8 1.8z" stroke-width="1.2"/></svg><span>Katılıyorum</span></a><a class="act" id="no" href="#" target="_blank" rel="noopener"><span>Katılamıyorum</span></a></div>
+      </div>
+      <div class="acts">
+        <a class="act" href="https://www.google.com/maps/search/?api=1&amp;query=Akman%20R%C3%B6nesans%2C%20Konutkent%20Mahallesi%202961.%20Cadde%20No%3A1%2FB%2C%20%C3%87ankaya%2C%20Ankara" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Konuma Git</span></a>
+        <a class="act" href="/nisan.ics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Takvime Ekle</span></a>
+        <button class="act wide" type="button" id="shareBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/></svg><span>Davetiyeyi Paylaş</span></button>
+      </div>
+      <p class="toast" id="toast" role="status"></p>
+    </div>
+    <div class="cd rv" style="--d:.95s" id="cd"></div>
+    <button class="back rv" style="--d:1.05s" type="button" id="backBtn">↺ Başa dön</button>
+  </section>
+</main>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  var seed=7; function rnd(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}
+  function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);parent.appendChild(e);return e}
+
+  // yol kenarı çiçek tarhları (yol: sol kenar 184,327 → 94,610 / sağ 216,327 → 306,610)
+  var beds=document.getElementById('beds')||document.createElementNS(NS,'g'), cols=['#5d7a4c','#6f8c5a','#e59bb0','#c96f8c','#7d9a62','#f0c2cc'];
+  for(var i=0;i<170;i++){
+    var t=rnd(), side=rnd()<.5?-1:1, w=4+t*14, off=1+rnd()*w;
+    var tt=t; t=.33+.67*t; var ex = side<0 ? 184-90*t : 216+90*t, y=327+283*t+ (rnd()-.5)*4;
+    el('circle',{cx:(ex+side*off).toFixed(1),cy:y.toFixed(1),r:(.8+t*2.4*rnd()+.6).toFixed(1),fill:cols[Math.floor(rnd()*cols.length)],opacity:.9},beds);
+  }
+  // küre lambalar
+  var lamps=document.getElementById('lamps')||document.createElementNS(NS,'g');
+  [.42,.62,.86].forEach(function(t,i){
+    [-1,1].forEach(function(side){
+      var ex= side<0 ? 184-90*t : 216+90*t, x=ex+side*(10+t*16), y=327+283*t, r=4+t*12;
+      el('circle',{cx:x,cy:y-r,r:r*2.6,fill:'url(#lampG)','class':'halo',style:'animation-delay:'+(i*.4)+'s'},lamps);
+      el('circle',{cx:x,cy:y-r,r:r,fill:'url(#globe)'},lamps);
+    });
+  });
+
+  // geri sayım
+  var target=new Date('2026-10-27T19:00:00+03:00').getTime(), cd=document.getElementById('cd');
+  function pad(n){return n<10?'0'+n:''+n}
+  function tick(){var ms=Math.max(0,target-Date.now());
+    var d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;
+    cd.innerHTML= ms>0 ? '<div><b>'+d+'</b><span>Gün</span></div><div><b>'+pad(h)+'</b><span>Saat</span></div><div><b>'+pad(m)+'</b><span>Dakika</span></div><div><b>'+pad(s)+'</b><span>Saniye</span></div>' : '<div><b>♥</b><span>Bugün</span></div>';}
+  tick(); setInterval(tick,1000);
+
+  // düşen yapraklar
+  var stage=document.querySelector('.stage');
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    for(var j=0;j<12;j++){var p=document.createElement('span');p.className='petal';
+      p.style.left=(Math.random()*100)+'%';p.style.animationDuration=(10+Math.random()*8)+'s';p.style.animationDelay=(-Math.random()*16)+'s';
+      p.style.setProperty('--dx',(Math.random()*120-60)+'px');p.style.setProperty('--r',(Math.random()*540+180)+'deg');stage.appendChild(p);}
+  }
+
+  var cover=document.getElementById('cover'), card=document.getElementById('card');
+  function openCard(){
+    cover.classList.add('out');
+    setTimeout(function(){cover.hidden=true;card.hidden=false;stage.scrollIntoView({behavior:'smooth',block:'start'});},650);
+  }
+  cover.querySelector('#openBtn').addEventListener('click',openCard);
+  document.getElementById('backBtn').addEventListener('click',function(){
+    cover.classList.remove('out'); cover.hidden=false;
+    card.hidden=true; stage.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+})();
+
+(function(){var FX={"sparks":[[40,120,0.9,"#fff"],[300,112,1,"#fff"],[360,140,0.8,"#fff"],[250,130,0.7,"#fff"],[130,108,0.8,"#fff"],[62.5,278.6,1,"#ffe9a8"],[62.5,339.9,1.1,"#ffe9a8"],[62.5,240.9,1.2,"#ffe9a8"],[70,271.5,1.3,"#ffe9a8"],[70,377,1,"#ffe9a8"],[70,256.8,1.1,"#ffe9a8"],[77.4,319.6,1.1,"#ffe9a8"],[77.4,237.4,1.2,"#ffe9a8"],[77.4,279.9,0.7,"#ffe9a8"],[84.7,309,1.1,"#ffe9a8"],[84.7,352.7,1.3,"#ffe9a8"],[84.7,368.5,1,"#ffe9a8"],[91.9,382,0.8,"#ffe9a8"],[91.9,262,1.3,"#ffe9a8"],[91.9,336.2,0.9,"#ffe9a8"],[98.9,292.7,0.9,"#ffe9a8"],[98.9,328.4,1.2,"#ffe9a8"],[98.9,390.5,1.2,"#ffe9a8"],[105.9,344.4,0.8,"#ffe9a8"],[105.9,396.5,1.2,"#ffe9a8"],[105.9,351.9,0.8,"#ffe9a8"],[112.7,328.1,0.9,"#ffe9a8"],[112.7,376.8,1.3,"#ffe9a8"],[112.7,367.5,0.9,"#ffe9a8"],[119.5,282.7,1.2,"#ffe9a8"],[119.5,240.7,1.1,"#ffe9a8"],[119.5,354.2,0.9,"#ffe9a8"],[126.1,398,1,"#ffe9a8"],[126.1,290.4,0.7,"#ffe9a8"],[126.1,245.7,0.8,"#ffe9a8"],[160,334.3,0.8,"#ffe9a8"],[160,377.7,0.9,"#ffe9a8"],[160,382.6,0.9,"#ffe9a8"],[167,314.6,1.1,"#ffe9a8"],[167,321.5,1.1,"#ffe9a8"],[167,312.2,1,"#ffe9a8"],[174,259.8,0.9,"#ffe9a8"],[174,311.9,1,"#ffe9a8"],[174,292.4,1,"#ffe9a8"],[181,327.8,1.1,"#ffe9a8"],[181,330,1,"#ffe9a8"],[181,278.4,1.1,"#ffe9a8"],[188,213.8,0.7,"#ffe9a8"],[188,393,0.9,"#ffe9a8"],[188,322.4,0.9,"#ffe9a8"],[195,268.2,0.9,"#ffe9a8"],[195,265.9,0.9,"#ffe9a8"],[195,213.4,1,"#ffe9a8"],[202,267.6,0.8,"#ffe9a8"],[202,253.9,0.8,"#ffe9a8"],[202,342,0.8,"#ffe9a8"],[209,272.7,1.2,"#ffe9a8"],[209,372.4,0.8,"#ffe9a8"],[209,333.2,1.2,"#ffe9a8"],[216,253.4,0.8,"#ffe9a8"],[216,247,1.2,"#ffe9a8"],[216,245.6,0.9,"#ffe9a8"],[223,333.5,1.2,"#ffe9a8"],[223,238.3,0.9,"#ffe9a8"],[223,264.6,0.9,"#ffe9a8"],[230,295.1,0.9,"#ffe9a8"],[230,247.3,0.7,"#ffe9a8"],[230,378.3,1.3,"#ffe9a8"],[237,391.4,1.3,"#ffe9a8"],[237,355.9,1.2,"#ffe9a8"],[237,316.6,0.9,"#ffe9a8"],[271.1,280.6,0.7,"#ffe9a8"],[271.1,289.8,1.2,"#ffe9a8"],[271.1,385.9,1.1,"#ffe9a8"],[277.7,384.3,1.2,"#ffe9a8"],[277.7,238.2,1.1,"#ffe9a8"],[277.7,285.6,1.1,"#ffe9a8"],[284.4,301.3,1.3,"#ffe9a8"],[284.4,288.8,0.9,"#ffe9a8"],[284.4,312.2,1.2,"#ffe9a8"],[291.2,261,1,"#ffe9a8"],[291.2,256.5,1.2,"#ffe9a8"],[291.2,368.3,1.2,"#ffe9a8"],[298.1,336.5,1.2,"#ffe9a8"],[298.1,272.5,0.9,"#ffe9a8"],[298.1,299.7,1,"#ffe9a8"],[305.1,223,0.7,"#ffe9a8"],[305.1,245.3,0.7,"#ffe9a8"],[305.1,377.3,0.8,"#ffe9a8"],[312.2,280.2,0.9,"#ffe9a8"],[312.2,340.2,1.1,"#ffe9a8"],[312.2,257.6,0.9,"#ffe9a8"],[319.5,324.7,1.1,"#ffe9a8"],[319.5,239,0.8,"#ffe9a8"],[319.5,333.6,1.2,"#ffe9a8"],[326.8,370.2,1.1,"#ffe9a8"],[326.8,294.2,1,"#ffe9a8"],[326.8,302.7,1.1,"#ffe9a8"],[334.3,276.5,1,"#ffe9a8"],[334.3,246.8,1,"#ffe9a8"],[334.3,385.4,1.3,"#ffe9a8"],[204.4,304.6,1.2,"#fffbe9"],[208.6,312.6,0.7,"#fffbe9"],[216,300.6,1.2,"#fffbe9"],[198.9,282.8,1,"#fffbe9"],[182.5,281.5,0.9,"#fffbe9"],[209.6,279,1.2,"#fffbe9"],[204.2,277.6,0.7,"#fffbe9"],[189.5,281.5,1.3,"#fffbe9"],[192.4,314.3,1,"#fffbe9"],[189.4,313.4,1.1,"#fffbe9"],[214.2,285.1,0.9,"#fffbe9"],[187.2,274.9,0.9,"#fffbe9"],[182.1,301.8,0.9,"#fffbe9"],[211.5,293.2,0.9,"#fffbe9"],[188,285,1.2,"#fffbe9"],[210,292,1.2,"#fffbe9"],[200,306,1.1,"#fffbe9"],[194,276,1,"#fffbe9"],[210,520,1.2,"#fff"],[246,540,1.3,"#fff"],[264,565,1.1,"#fff"],[226,575,1.2,"#fff"],[236,490,1,"#fff"],[200,570,1.1,"#fff"]],"lamps":[[129.48,436.82,23.503999999999998],[270.52,436.82,23.503999999999998],[108.27999999999999,491.02000000000004,29.744],[291.72,491.02000000000004,29.744],[82.84,556.06,37.232],[317.15999999999997,556.06,37.232]],"chand":[200,294,30]};var cv=document.querySelector('.fx');if(!cv)return;var ctx=cv.getContext('2d');var W,H,dpr;
+function size(){var r=cv.getBoundingClientRect();dpr=window.devicePixelRatio||1;W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);}
+function X(x){return x/400*W}function Y(y){return (y-96)/504*H}function S(v){return v/400*W}
+function glow(x,y,r,a){var g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,'rgba(255,242,184,'+a+')');g.addColorStop(.45,'rgba(255,216,110,'+(a*.55)+')');g.addColorStop(1,'rgba(255,216,110,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,r,0,6.2832);ctx.fill();}
+var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function draw(ts){var t=(ts||0)/1000;ctx.clearRect(0,0,W,H);
+ if(FX.chand){var c=FX.chand;var k=still?1:1+.04*Math.sin(t*2*Math.PI/3.2);glow(X(c[0]),Y(c[1]),S(c[2])*k,still?.8:.72+.12*Math.sin(t*2*Math.PI/3.2));}
+ FX.lamps.forEach(function(l,i){var a=still?.8:.6+.35*(Math.sin(t*2*Math.PI/3.4+i*.9)*.5+.5);glow(X(l[0]),Y(l[1]),S(l[2]),a);});
+ FX.sparks.forEach(function(s,i){var a=still?.7:Math.max(0,Math.sin(t*2*Math.PI/2.4+i*1.37));ctx.globalAlpha=a;ctx.fillStyle=s[3]&&s[3][0]=='#'?s[3]:'#fff';ctx.beginPath();ctx.arc(X(s[0]),Y(s[1]),Math.max(.6,S(s[2])),0,6.2832);ctx.fill();});
+ ctx.globalAlpha=1; if(!still)requestAnimationFrame(draw);}
+size();window.addEventListener('resize',size);requestAnimationFrame(draw);})();
+
+(function(){var nm=document.getElementById('rname');if(!nm)return;var num=document.getElementById('num'),err=document.getElementById('err'),n=1;
+function wa(t){return 'https://wa.me/?text='+encodeURIComponent(t)}
+function upd(){var name=nm.value.trim();
+ document.getElementById('yes').href=wa('Merhaba, ben '+name+'. 27 Ekim 2026 Salı saat 19.00\'daki İlayda & Yahya Yasin\'in nişan törenine '+n+' kişi olarak katılacağım. 💍');
+ document.getElementById('no').href=wa('Merhaba, ben '+name+'. Maalesef 27 Ekim\'deki İlayda & Yahya Yasin\'in nişan törenine katılamayacağım. Çifte şimdiden mutluluklar dilerim. 💐');
+ if(name)err.hidden=true;}
+document.getElementById('minus').addEventListener('click',function(){n=Math.max(1,n-1);num.textContent=n;upd();});
+document.getElementById('plus').addEventListener('click',function(){n=Math.min(20,n+1);num.textContent=n;upd();});
+nm.addEventListener('input',upd);upd();
+['yes','no'].forEach(function(id){document.getElementById(id).addEventListener('click',function(e){if(!nm.value.trim()){e.preventDefault();err.hidden=false;nm.focus();}});});
+var tst=document.getElementById('toast');function toast(m){tst.textContent=m;clearTimeout(tst._h);tst._h=setTimeout(function(){tst.textContent=''},2600)}
+document.getElementById('shareBtn').addEventListener('click',function(){var url=location.origin+location.pathname,data={title:'İlayda & Yahya Yasin · Nişan Davetiyesi',text:'27 Ekim 2026 · Akman Rönesans',url:url};
+ if(navigator.share){navigator.share(data).catch(function(){});return;}
+ if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){toast('Davetiye linki kopyalandı')},function(){toast(url)});}else toast(url);});
+})();
+</script>
+
+</body>
+</html>
