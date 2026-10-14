@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Akman Ronesans//Nisan Davetiyesi//TR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ilayda-yahya-nisan-20261027@nisan-davetiye-nine.vercel.app
+DTSTAMP:20261014T150000Z
+DTSTART:20261027T160000Z
+DTEND:20261027T200000Z
+SUMMARY:İlayda & Yahya Yasin · Nişan Töreni
+LOCATION:Akman Rönesans\, Konutkent Mahallesi 2961. Cadde No:1/B\, Çankaya\, Ankara
+DESCRIPTION:Saran ve Bingöl ailelerinin kıymetli evlatları İlayda & Yahya Yasin'in nişan töreni.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Yarın İlayda & Yahya Yasin'in nişanı
+END:VALARM
+END:VEVENT
+END:VCALENDAR
